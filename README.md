@@ -34,19 +34,21 @@ For additional dependencies review the Gemfile.
 bundle install
 ```
 
-2. Start server
-
-```
-rackup
-```
-
-3. Setup database configuration file
+2. Setup database configuration file
 
 /config/database.yml
 ```
 test:
   adapter: sqlite3
   database: test/db/test.sqlite
+```
+
+Note: development and production database instances will specified to move on to step 3.
+
+3. Start server
+
+```
+rackup
 ```
 
 ## Tests
