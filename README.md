@@ -16,37 +16,60 @@ When available, the following content types are supported:
 * API (information about the API provided by code)
 * /docs (generated code documentation. See beloy
 
-
 ##Requirements
 
 This code has been run and tested on Ruby 2.1 and Sinatra 1.4.5.
 
 * Ruby 2.1+
 * Sinatra 1.4.5+
+* Bundler
 
 For additional dependencies review the Gemfile.
 
 ## Installation
 
+1. Install dependencies with bundler
+
+```
+bundle install
+```
+
+2. Start server
+
+```
+rackup
+```
+
+3. Setup database configuration file
+
+```
+test:
+  adapter: sqlite3
+  database: test/db/test.sqlite
+```
+
 ## Tests
 
 Tests are implemented with the default Ruby Minitest framework. 
 
-Testing is invoked with:
-
+```
 rake test
+```
 
 ### Generating Documentation
 Comments are YARD compatible, but generated documentation is incomplete due to route extentions. 
 This may be fixed in future versions of yard. YARD style tags are used and there is a .yardopts 
 file for preferences. 
 
-Documentation is generated with:
-
+```
 yardoc
+```
 
 ##License
 
+See [LICENSE](LICENSE).
 
 ##Support
 
+This software is not meant to be run outside the context of the Zephir metadata management system. 
+Tthe running service instance is supported as part of Zephir.
