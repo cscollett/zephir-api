@@ -42,6 +42,7 @@ rackup
 
 3. Setup database configuration file
 
+/config/database.yml
 ```
 test:
   adapter: sqlite3
