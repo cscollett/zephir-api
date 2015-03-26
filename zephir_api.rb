@@ -10,7 +10,7 @@ require 'bundler'
 Bundler.require(:default, ENV['RACK_ENV'].to_sym)
 
 # Setup Database
-db_options = YAML.load(File.read('./config/database.yml'))
+db_options = YAML.load(File.read(File.join(ENV['APP_ROOT'],'config/database.yml')))
 ActiveRecord::Base.establish_connection(db_options[ENV['RACK_ENV']])
 # Create ORM class for Zephir database table (ActiveRecord loads schema from database)
 class ZephirFiledata < ActiveRecord::Base; end
