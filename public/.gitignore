@@ -1,0 +1,5 @@
+# Ignore everything in this directory
+# This directory is needed for deployment
+*
+# Except this file
+!.gitignore
