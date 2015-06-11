@@ -28,13 +28,19 @@ For additional dependencies review the Gemfile.
 
 ## Installation
 
-1. Install dependencies with bundler
+1) Install the application
+
+```
+git clone git@github.com:cdlib/zephir-api.git
+```
+
+2) Install dependencies with bundler
 
 ```
 bundle install
 ```
 
-2. Setup database configuration file
+3) Setup database configuration file
 
 /config/database.yml
 ```
@@ -45,7 +51,7 @@ test:
 
 Note: development and production database instances will specified to move on to step 3.
 
-3. Start server
+4) Start server
 
 ```
 rackup
