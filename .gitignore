@@ -1,5 +1,5 @@
 /config/database.yml
-/db/*.sqlite
+/test/db/*.sqlite
 .ruby-version
 /.yardoc
 /doc
